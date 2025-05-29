@@ -1,34 +1,18 @@
 *{
-
     margin: 0;
     padding: 0;
 }
 
-.div_form{
-    background-color: rgb(223, 220, 220);
-    width: 300px;
-    height: 400px;
-    margin: 50px auto;
+.form-group{
+    width: 500px;
+    
 }
 
-.main{
-    display: grid;
-    gap: 5px;
-
-}
-.main input{
-    margin-right: 10px;
-    margin-left: 10px;
-}
-#empresa{
-    margin-right: 10px;
-    margin-left: 10px;
-}
-.main label{
-    margin-top: 5px;
-
-}
-.botao{
-    margin-top: 5px;
+form h2{
     text-align: center;
+    margin-top: 150px;
 }
+
+
+
+

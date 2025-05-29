@@ -5,42 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário_php</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
 
-    <div class="div_form">
-        <form action="script.php" method="POST">
 
-            <div class="titulo">
-                <h2>Calculo de aumento salarial</h2>
-                <p>Insira os dados abaixo e calcule o seu aumento salarial de 30%</p>
-            </div>
-
-            <div class="main">
-                <label for="nome">Nome: </label>
-                <input type="text" id="nome" name="nome" placeholder="Digite o seu nome: ">
-                <label for="salario">Salário: </label>
-                <input type="text" id="salario" name="salario" placeholder="Digite o seu salário: ">
-                <label for="empresa">Empresa Atual</label>
-                <select name="empresa" id="empresa">
-                    <option value="NovaPrime Consultoria">NovaPrime Consultoria</option>
-                    <option value="Atlas Global Solutions">Atlas Global Solutions</option>
-                    <option value="Vectra Empreendimentos">Vectra Empreendimentos</option>
-                    <option value="Orion Group">Orion Group</option>
-                    <option value="Delta & Cia">Delta & Cia</option>
-                </select>
-
-            </div>
-
-            <div class="botao">
-                <button type="submit">Enviar</button>
-            </div>
-
-
-            
-
-        </form>
-    </div>
     
+    <form action="script.php" method="POST">
+
+        <h2>Calculo de salário</h2>
+        
+        <div class="form-group">
+          <label for="exampleInputEmail1">Nome: </label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite o seu nome:" name="nome">
+        </div>
+        
+        <div class="form-group">
+          <label for="exampleInputPassword1">Salário</label>
+          <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Digite o seu salário: " name="salario">
+        </div>
+
+        <div class="form-group">
+            <label for="empresa">Empresa Atual</label>
+            <select name="empresa" id="empresa">
+                <option value="NovaPrime Consultoria">NovaPrime Consultoria</option>
+                <option value="Atlas Global Solutions">Atlas Global Solutions</option>
+                <option value="Vectra Empreendimentos">Vectra Empreendimentos</option>
+                <option value="Orion Group">Orion Group</option>
+                <option value="Delta & Cia">Delta & Cia</option>
+            </select>
+        </div>        
+
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+
 </body>
 </html>
